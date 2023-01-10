@@ -26,6 +26,11 @@ cd ${WORKING_DIR}
 #	echo -e "Host *\n    StrictHostKeyChecking no\n    UserKnownHostsFile=/dev/null\n" > #~/.ssh/config
 #fi
 
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/id_rsa
+
+
 # Check to see if the given directory already has an initialized
 # git repository.
 if [ ! -d "${WORKING_DIR}/.git" ]; then
