@@ -12,6 +12,12 @@ set -e -x
 [ -z "${FILES_TO_COMMIT}" ] && { echo "Need to set FILES_TO_COMMIT"; exit 1; }
 [ -z "${SLEEP_INTERVAL}" ] && { echo "Need to set SLEEP_INTERVAL"; exit 1; }
 
+
+
+echo "复制以下秘钥到github网站上"
+cat /root/.ssh/id_rsa.pub
+
+
 # Change to our working directory
 cd ${WORKING_DIR}
 

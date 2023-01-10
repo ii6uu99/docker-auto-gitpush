@@ -1,0 +1,16 @@
+C:\Users\Administrator\.ssh
+
+
+
+echo -e "\n\n\n\n" | ssh-keygen -t rsa -C "ii6uu99@163.com"
+
+ ssh-keygen -t ed25519 -C "ii6uu99@163.com"
+4个enter确认
+
+
+打开
+C:\Users\Administrator\.ssh\id_rsa.pub
+
+打开网址黏贴
+https://github.com/settings/keys
+
