@@ -1,15 +1,13 @@
-# docker-git-push
-This project is a simple script and Docker container for detecting changes to a
-given directory and automatically commiting and pushing any changes to that directory.
-This can be useful for keeping configuration files in version control automatically
-for applications that like to change them.
+# docker-git-推送
+这个项目是一个简单的脚本和 Docker 容器，用于检测对 给定的目录并自动提交和推送任何更改到该目录。 这对于自动将配置文件保存在版本控制中很有用 对于喜欢更改它们的应用程序。
 
-## Build
+
+## 构建
 ```
 docker build -t "git-push:latest" .
 ```
 
-## Usage
+## 运行
 ```
 docker run --name git-push -d  \
     -e GIT_REPO="ssh://git@github.com/user/repository.git" \
